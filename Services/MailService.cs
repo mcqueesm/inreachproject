@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Mail;
+using Microsoft.Extensions.Configuration;
 
 namespace InReachProject.Services
 {
@@ -9,8 +10,10 @@ namespace InReachProject.Services
      * */
     public class MailService
     {
-        public MailService()
+        private readonly IConfiguration _configure;
+        public MailService(IConfiguration configure)
         {
+            _configure = configure;
         }
 
         //Email account from which email will be sent
@@ -22,7 +25,7 @@ namespace InReachProject.Services
             //Compose email
             var fromAddress = new MailAddress(fromEmail, "Sean McQueen");
             var toAddress = new MailAddress(email, "InReach");
-            string fromPassword = "seanmcqueen123";
+            string fromPassword = _configure["emailPassword"];
             string subject = "Here is your S3 URL!";
             string body = "Hello, \nThank you for uploading a file. " +
                           "This URL will expire in 1 hour. \n" +
