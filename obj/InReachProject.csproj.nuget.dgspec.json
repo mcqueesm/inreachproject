@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/RoseSamuel/Projects/InReachProject/InReachProject/InReachProject.csproj": {}
+  },
+  "projects": {
+    "/Users/RoseSamuel/Projects/InReachProject/InReachProject/InReachProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/RoseSamuel/Projects/InReachProject/InReachProject/InReachProject.csproj",
+        "projectName": "InReachProject",
+        "projectPath": "/Users/RoseSamuel/Projects/InReachProject/InReachProject/InReachProject.csproj",
+        "packagesPath": "/Users/RoseSamuel/.nuget/packages/",
+        "outputPath": "/Users/RoseSamuel/Projects/InReachProject/InReachProject/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/RoseSamuel/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.3.101, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.3.111.11, )"
+            },
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Configuration.AzureKeyVault": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
